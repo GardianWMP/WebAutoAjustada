@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <title>MB-Usuarios</title>
+
+</head>
+
+<body>
+    <!--Espacio LOGO -->
+    <div class="head">
+        <div class="logo">
+            <a href="#"><img src="img/Logo1.png" alt="MotorBikes"></a>
+        </div>
+
+        <!--Espacio BARRA NAVEGACION -->
+        <nav class="navbar">
+            <a href="index.html">Inicio</a>
+            <a href="#registrar">Login</a>
+            <a href="#registrar">Registro</a>
+        </nav>
+    </div>
+
+    <!-- ---------- ---------- ---------- ---------- ---------- -->
+    <!--Espacio MOTOR BIKES -->
+    <header class="content usuario1">
+        <h2 class="title">Usuarios</h2>
+        <p>
+            Tu cuenta de usuario en Motor Bikes es tu puerta de entrada a una experiencia personalizada y exclusiva.
+            Regístrate hoy para acceder a funciones adicionales, como seguimiento de pedidos, listas de deseos
+            personalizadas y ofertas especiales solo para miembros. Si ya eres parte de nuestra comunidad, inicia sesión
+            para disfrutar de todos los beneficios que tenemos para ofrecer.
+
+        </p>
+
+    </header>
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!--Espacio REGISTRO -->
+    <header class="content registro1" id="registrar">
+
+        <h2>Formulario de Registro</h2>
+
+        <form id="miFormulario">
+            <!--Registrar Nombres -->
+            <label for="nombre">Nombres: </label>
+            <input type="text" id="nombre" name="nombre" required><br>
+
+            <!--Registrar Apellidos -->
+            <label for="apellidos">Apellidos: </label>
+            <input type="text" id="apellidos" name="apellidos" required><br>
+
+            <!--Registrar Moto -->
+            <label for="moto">Selecciona tu moto: </label>
+            <select id="moto" name="moto">
+                <option value="Apache">Apache</option>
+                <option value="Aprilia">Aprilia</option>
+                <option value="AKT">Akt</option>
+                <option value="Bajaj">Bajaj</option>
+                <option value="Benelli">Benelli</option>
+                <option value="BMW">Bmw</option>
+                <option value="CfMotos">CfMotos</option>
+                <option value="Ducati">Ducati</option>
+                <option value="Electrika">Electrika</option>
+                <option value="HarleyDavidson">Harley Davidson</option>
+                <option value="Honda">Honda</option>
+                <option value="Kawasaki">Kawasaki</option>
+                <option value="KTM">KTM</option>
+                <option value="MVAgusta">MV Agusta</option>
+                <option value="Piaggio">Piaggio</option>
+                <option value="RoyalEnfield">Royal Enfield</option>
+                <option value="Suzuki">Suzuki</option>
+                <option value="Triumph">Triumph</option>
+                <option value="Vespa">Vespa</option>
+                <option value="Victory">Victory</option>
+                <option value="Yamaha">Yamaha</option>
+
+            </select><br><br>
+
+            <!--Boton de Registro-->
+            <input type="submit" class="btn" value="Registrar">
+        </form>
+        <br>
+
+        <!-- Tabla donde se mostrarán los datos -->
+        <table id="tablaDatos">
+            <tr>
+                <th>Nombres</th>
+                <th>Apellidos</th>
+                <th>Moto</th>
+            </tr>
+        </table>
+
+    </header>
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!--Espacio LISTADO REGISTRADO -->
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid rgb(0, 0, 0);
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 10px;
+            text-align: left;
+        }
+    </style>
+
+    <script>
+        window.onload = function () {
+            document.getElementById('miFormulario').addEventListener('submit', function (event) {
+                event.preventDefault();
+
+                // Capturar los datos
+                var nombre = document.getElementById('nombre').value;
+                var apellidos = document.getElementById('apellidos').value;
+                var moto = document.getElementById('moto').value;
+
+                // Crea una nueva fila en la tabla para los datos
+                var tabla = document.getElementById('tablaDatos');
+                var nuevaFila = tabla.insertRow(-1); // Inserta una fila al final de la tabla
+                var celda1 = nuevaFila.insertCell(0);
+                var celda2 = nuevaFila.insertCell(1);
+                var celda3 = nuevaFila.insertCell(2);
+
+                // Añade los datos a las celdas
+                celda1.textContent = nombre;
+                celda2.textContent = apellidos;
+                celda3.textContent = moto;
+
+                // Limpia el formulario después de la inserción
+                document.getElementById('miFormulario').reset();
+            });
+        }
+    </script>
+
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <footer>
+        <!-- Información del pie de página, como derechos de autor, enlaces a redes sociales, etc. -->
+        <footer class="piepag">
+            <div class="container">
+                <p>&copy; Walter Mojica Pérez - ID:619300 - Uniminuto 2024.
+                    <br> Profesor: Edwin Albeiro Ramos Villamil
+                    <br>Todos los derechos reservados.
+                </p>
+                <ul class="social-links">
+                    <li><a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+                    <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+                    <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                    <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                </ul>
+            </div>
+        </footer>
+
+    </footer>
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+</body>
+
+</html>

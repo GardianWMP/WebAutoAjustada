@@ -1,0 +1,494 @@
+/* Reseteo básico para estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/*- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+/* Estilos del header */
+.head {
+    background-color: #333;
+    color: #fff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.head .logo img {
+    /*width: 150px;*/
+    width: 100px;
+}
+
+/*- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+.navbar {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 7px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #555;
+}
+
+/* Estilo para el contenido principal */
+.main {
+    /* El contenido no se superponga con el encabezado*/
+    margin-top: 100px;
+}
+
+/*- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+/* Estilos generales del contenido */
+.title {
+    /* Color del texto en blanco */
+    color: #fff;
+    /* Añade un contorno negro al texto */
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+    /* Margen inferior del párrafo */
+    margin-bottom: 1vh;
+    /* Espacio alrededor del texto */
+    padding: 5px;
+    /* Tamaño de fuente del párrafo */
+    font-size: 3vw;
+    /* Relleno horizontal del párrafo */
+    padding: 0 1vw;
+}
+
+p {
+    /* Margen inferior del párrafo */
+    margin-bottom: 1vh;
+    /* Tamaño de fuente del párrafo */
+    font-size: 1.5vw;
+    /* Relleno horizontal del párrafo */
+
+    padding: 0 1vw;
+}
+
+.content {
+    padding: 20px;
+    /*Margen horizontal*/
+    margin: 5px 0;
+}
+
+li {
+    /* Tamaño de fuente más grande para pantallas más pequeñas */
+    font-size: 1vw;
+}
+
+/*- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+.btn {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 5px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #777;
+}
+
+/*- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+/* Pie de pagina */
+.piepag {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.piepag .container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.social-links li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.social-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #aaa;
+}
+
+/*- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+/*--- Recuadros INDEX ---*/
+/*INDEX Motor Bikes S.A.S.*/
+.contenido1 {
+    height: 60vh !important;
+    background: rgba(0, 0, 0, 0.7) url(img/contenido.jpg) no-repeat center center;
+    /*Fijar Imagen*/
+    background-attachment: fixed;
+    background-size: cover;
+    color: #fff;
+    padding: 20px;
+}
+
+/*INDEX Motocicletas*/
+.motocicleta1 {
+    height: 60vh !important;
+    background: rgba(0, 0, 0, 0.7) url(img/m_deportiva.jpg) no-repeat center center;
+    /*Fijar Imagen*/
+    /*background-attachment: fixed;*/
+    background-size: cover;
+    color: #fff;
+    padding: 20px;
+}
+
+/*INDEX Compras*/
+.compra1 {
+    height: 60vh !important;
+    background: rgba(0, 0, 0, 0.7) url(img/compra.jpg) no-repeat center center;
+    /*Fijar Imagen*/
+    background-attachment: fixed;
+    background-size: cover;
+    color: #fff;
+    padding: 20px;
+}
+
+/*INDEX Respaldo*/
+.respaldo1 {
+    height: 60vh !important;
+    background: rgba(0, 0, 0, 0.7) url(img/respaldo.jpg) no-repeat center center;
+    /*Fijar Imagen*/
+    /*background-attachment: fixed;*/
+    background-size: cover;
+    color: #fff;
+    padding: 20px;
+}
+
+/*INDEX Comunidad*/
+.comunidad1 {
+    height: 60vh !important;
+    background: rgba(0, 0, 0, 0.7) url(img/comunidad.png) no-repeat center center;
+    /*Fijar Imagen*/
+    background-attachment: fixed;
+    background-size: cover;
+    color: #fff;
+    padding: 20px;
+}
+
+/*INDEX Usuarios*/
+.usuarios1 {
+    height: 60vh !important;
+    background: rgba(0, 0, 0, 0.7) url(img/usuarios.jpg) no-repeat center center;
+    /*Fijar Imagen*/
+    /*background-attachment: fixed;*/
+    background-size: cover;
+    color: #fff;
+    padding: 20px;
+}
+
+/*INDEX Nosotros*/
+.nosotros1 {
+    height: 60vh !important;
+    background: rgba(0, 0, 0, 0.7) url(img/contactenos.jpeg) no-repeat center center;
+    /*Fijar Imagen*/
+    background-attachment: fixed;
+    background-size: cover;
+    color: #fff;
+    padding: 20px;
+}
+
+/*- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+/*--- Recuadros MOTOCICLETAS ---*/
+/*MOTOCICLETAS deportivas*/
+.deportiva1 {
+    height: 60vh !important;
+    background: rgba(0, 0, 0, 0.7) url(img/m_deportiva1.jpg) no-repeat center center;
+    /*Fijar Imagen*/
+    /*background-attachment: fixed;*/
+    background-size: cover;
+    color: #fff;
+    padding: 20px;
+}
+
+/*MOTOCICLETAS aventura*/
+.aventura1 {
+    height: 60vh !important;
+    background: rgba(0, 0, 0, 0.7) url(img/m_aventura.jpg) no-repeat center center;
+    /*Fijar Imagen*/
+    background-attachment: fixed;
+    background-size: cover;
+    color: #fff;
+    padding: 20px;
+}
+
+/*MOTOCICLETAS enduro*/
+.enduro1 {
+    height: 60vh !important;
+    background: rgba(0, 0, 0, 0.7) url(img/m_enduro.jpg) no-repeat center center;
+    /*Fijar Imagen*/
+    /*background-attachment: fixed;*/
+    background-size: cover;
+    color: #fff;
+    padding: 20px;
+}
+
+/*MOTOCICLETAS automaticas*/
+.automatica1 {
+    height: 60vh !important;
+    background: rgba(0, 0, 0, 0.7) url(img/m_automatica.jpg) no-repeat center center;
+    /*Fijar Imagen*/
+    background-attachment: fixed;
+    background-size: cover;
+    color: #fff;
+    padding: 20px;
+}
+
+/*- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+/*--- Recuadros COMPRAS ---*/
+/*COMPRAS cotizacion*/
+.cotizacion1 {
+    height: 60vh !important;
+    background: rgba(0, 0, 0, 0.7) url(img/cotizacion.jpg) no-repeat center center;
+    /*Fijar Imagen*/
+    /*background-attachment: fixed;*/
+    background-size: cover;
+    color: #fff;
+    padding: 20px;
+}
+
+/*COMPRAS financiacion*/
+.financiacion1 {
+    height: 60vh !important;
+    background: rgba(0, 0, 0, 0.7) url(img/financia.jpg) no-repeat center center;
+    /*Fijar Imagen*/
+    background-attachment: fixed;
+    background-size: cover;
+    color: #fff;
+    padding: 20px;
+}
+
+/*- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+/*--- Recuadros RESPALDO ---*/
+/*RESPALDO talleres*/
+.talleres1 {
+    height: 60vh !important;
+    background: rgba(0, 0, 0, 0.7) url(img/taller.jpg) no-repeat center center;
+    /*Fijar Imagen*/
+    /*background-attachment: fixed;*/
+    background-size: cover;
+    color: #fff;
+    padding: 20px;
+}
+
+/*RESPALDO repuestos*/
+.repuestos1 {
+    height: 60vh !important;
+    background: rgba(0, 0, 0, 0.7) url(img/repuestos.jpg) no-repeat center center;
+    /*Fijar Imagen*/
+    background-attachment: fixed;
+    background-size: cover;
+    color: #fff;
+    padding: 20px;
+}
+
+/*RESPALDO manuales*/
+.manuales1 {
+    height: 60vh !important;
+    background: rgba(0, 0, 0, 0.7) url(img/manuales.jpg) no-repeat center center;
+    /*Fijar Imagen*/
+    /*background-attachment: fixed;*/
+    background-size: cover;
+    color: #fff;
+    padding: 20px;
+}
+
+/*- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+/*--- Recuadros USUARIOS ---*/
+/*USUARIOS usuario*/
+.usuario1 {
+    height: 60vh !important;
+    background: rgba(0, 0, 0, 0.7) url(img/usuario.jpg) no-repeat center center;
+    /*Fijar Imagen*/
+    background-attachment: fixed;
+    background-size: cover;
+    color: #fff;
+    padding: 20px;
+}
+
+/*--- Recuadros CONTACTENOS ---*/
+/*CONTACTENOS almacenes*/
+.almacen1 {
+    height: 60vh !important;
+    background: rgba(0, 0, 0, 0.7) url(img/almacen.jpg) no-repeat center center;
+    /*Fijar Imagen*/
+    background-attachment: fixed;
+    background-size: cover;
+    color: #fff;
+    padding: 20px;
+}
+
+/*- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+/* Media para la responsividad, ajuste para tabletas*/
+@media (max-width: 768px) {
+    .head {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .contenido1 {
+        height: 50vh;
+    }
+}
+
+/* Media para la responsividad, ajustes para teléfonos móviles */
+@media (max-width: 480px) {
+    .head {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .contenido1 {
+        height: 40vh;
+    }
+}
+
+/* Media para ajustar el tamaño del texto en pantallas más pequeñas */
+@media (max-width: 720px) {
+    .title {
+        /* Tamaño de fuente del párrafo */
+        font-size: 5vw;
+    }
+
+    p {
+        /* Tamaño de fuente más grande para pantallas más pequeñas */
+        font-size: 3.5vw;
+    }
+
+    li {
+        /* Tamaño de fuente más grande para pantallas más pequeñas */
+        font-size: 3.5vw;
+    }
+
+}
+
+/* Estilo para el botón REGÍSTRATE */
+.btn-registrate {
+    /* Hace que el botón sea un bloque para permitir centrarlo */
+    display: block;
+    /* Ancho del botón */
+    width: 200px;
+    /* Centra el botón horizontalmente */
+    margin: 20px auto;
+    /* Espaciado interno del botón */
+    padding: 10px;
+    /* Tamaño del texto */
+    font-size: 20px;
+    /* Color del texto */
+    color: white;
+    /* Color de fondo inicial */
+    background-color: #007BFF;
+    /* Remueve el borde del botón */
+    border: none;
+    /* Cambia el cursor a una mano al pasar sobre el botón */
+    cursor: pointer;
+    /* Suaviza el cambio de color */
+    transition: background-color 0.5s ease;
+}
+
+/*Animación de cambio de colores al pasar el ratón sobre el botón */
+.btn-registrate:hover {
+    /*Color de fondo al pasar el ratón */
+    background-color: #FFC107;
+}
+
+/*Animación degradada que cambie constantemente */
+@keyframes cambioColores {
+    0% {
+        background-color: #007BFF;
+    }
+
+    50% {
+        background-color: #28A745;
+    }
+
+    100% {
+        background-color: #DC3545;
+    }
+}
+
+.btn-registrate {
+    animation: cambioColores 3s ease infinite;
+}
+
+/*----- Estilo para el botón REGÍSTRATE -----*/
+.btn-registrate {
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+    background-color: #007BFF;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    /* Eliminar el subrayado del enlace */
+    transition: background-color 0.5s ease;
+}
+
+.btn-registrate:hover {
+    background-color: #FFC107;
+}
+
+@keyframes cambioColores {
+    0% {
+        background-color: #007BFF;
+    }
+
+    50% {
+        background-color: #28A745;
+    }
+
+    100% {
+        background-color: #DC3545;
+    }
+}
+
+.btn-registrate {
+    animation: cambioColores 3s ease infinite;
+}
